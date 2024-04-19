@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    font-family:'Poppins' ,sans-serif ;
+    box-sizing: border-box; 
+
+}
+.navbar{
+    /* padding: 20px 0 ; */
+    background-color: #000;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    /* margin-bottom: 2vh;  */
+    height: 10vh;
+    
+}
+.pos {
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 9999;
+}
+.navbar>div>img {
+    height: 25px;
+    margin-left: 7vh;
+    margin-right: 2vh;
+
+}
+.navbar .line{
+    border: 1px solid whitesmoke;
+    height: 6vh;
+    
+
+}
+.grow-list ul{
+    display:flex;
+    /* flex-direction: row; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+    
+}
+.list-item {
+    color:#ffffff;
+    list-style: none;
+    font-size: 12px;
+    font-family: 'Poppins' ,sans-serif;
+    font-weight: 600;
+}
+.logo,
+.list-item {
+  cursor: pointer;
+}
+.button-small{
+    position: absolute;
+    right: 5%;
+    top:  20px;
+    padding: 5px 15px;
+    border-radius: 6px;
+    border:1px solid rgb(0, 0, 0);
+    color: white;
+    background-color: #ae3ec9;
+    opacity: 0.95;
+    cursor: pointer;
+
+}
+.hero {
+    background-image: url(./assets/bg.png);
+    overflow: hidden;;
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    padding-top:10vh;
+    
+}
+.hero-heading {
+    color:#ffffff;
+    font-size: 10vh;
+    text-align: center;
+    text-decoration: none;
+    padding: 70px 70px;
+    padding-bottom: 0;
+    font-weight: 600;
+}
+.hero-description{
+    color:#ffffff;
+    font-size: 25px;
+    text-align: center;;
+    text-decoration: none;;
+    font-weight: 500;
+    padding: 50px 30px 60px  ;
+
+}
+.button-large {
+    position: relative;
+    padding: 15px 20px;
+    border: 1px solid #862e9c;
+    border-radius: 7px;
+    color:#ffffff;
+    background-color:#d232fa;
+    font-weight: 500;
+    font-size:20px;
+    opacity: 0.95;
+    cursor: pointer;
+}
