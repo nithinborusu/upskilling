@@ -17,3 +17,17 @@ let num2 =10;
 console.log(num1+num2);
 let a = null;
 console.log(typeof a);
+//array
+let arr =[1,2,'Nithin',true];
+console.log(arr);
+console.log(arr[2]);
+
+//object
+let bankaccount = {
+  firstName :'nithin',
+  lastName: 'borusu',
+  mobile : 897664,
+  balance : 1000000,
+};
+console.log(bankaccount);
+console.log(bankaccount.balance);
