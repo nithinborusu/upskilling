@@ -71,7 +71,16 @@ while(i<10){
     console.log(i);
     i++;
 }
-
+//for
 for(let i=0;i<6;i++){
     console.log(`${5}*${i} = ${5*i}`);
 }
+
+//for of
+let fruit =['apple','bada Apple','chota Apple','double App'];
+let upperFruit =[];
+for(const pedhaletter of fruit){
+    upperFruit.push(pedhaletter.toUpperCase());
+}
+console.log(upperFruit);
+
