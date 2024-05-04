@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Cursor</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: black;
+        }
+    
+        .open {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation: pulse 1s ease-in-out, growAndFade 3s forwards;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(10);
+                opacity: 1;
+            }
+        }
+
+        @keyframes growAndFade {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(20);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.addEventListener("click", function(event) {
+            const element = document.createElement("div");
+            element.classList.add("open");
+            let  randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+            element.style.backgroundColor=randomColor;
+            element.style.left = event.pageX + "px";
+            element.style.top = event.pageY + "px";
+
+            document.body.appendChild(element);
+            setTimeout(function() {
+                element.remove();
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
