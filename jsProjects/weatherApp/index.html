@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="title">Weather App</h1>
+            <form onsubmit="getData(event)" class="searchData">
+              <input id="inputBox" type="text" placeholder="Enter the City Name" >
+              <button class="btn">Search</button>
+            </form>
+        </div>
+
+        <section class="cityWeatherData">
+
+            <div class="location details">
+
+                <div class="card">
+                    <p>Country Name</p>
+                    <p id="countryName">_</p>
+                </div>
+
+                <div class="card">
+                    <p>State Name</p>
+                    <p id="stateName">_</p>
+                </div>
+                <div class="card">
+                    <p>City Name</p>
+                    <p id="cityName">_</p>
+                </div>
+            </div>
+
+            <div class="weatherDetails details">
+                <div class="card">
+                    <p>Humidity</p>
+                    <p id="humidity">_</p>
+                </div>
+                <div class="card">
+                    <p>Wind Speed</p>
+                    <p id="windSpeed">_</p>
+                </div>
+                <div class="card">
+                    <p>Temperature</p>
+                    <P><span id="temperature">_</span>&#8451;</P>
+                </div>
+                <div class="card">
+                  <img src="" alt="icon" id="logoImage"   >
+                    <p id="weatherStatus">_</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="table-comp">
+        <table>
+  
+          <thead>
+            <tr>
+              <th>City</th>
+              <th>Country</th>
+              <th>State</th>
+              <th>Humidity</th>
+              <th>Wind Speed</th>
+              <th>Temperature</th>
+              <th>Weather</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+   
+</body>
+<script src="./script.js"></script>
+</html>

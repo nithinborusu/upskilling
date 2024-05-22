@@ -1,0 +1,97 @@
+*{
+    margin:0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('weather.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#f3f3f3;
+}
+
+.container{
+    border: 2px solid #f3f3f3;
+    border-radius: 20px;
+    display: flex;
+    background-color:#0A79DF;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 30px;
+    box-shadow: 0 0  10px #bfdbfe;
+    margin-bottom: 50px;
+
+}
+
+.header h1{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.searchData input {
+    border: 1px solid white;
+    background-color:black;
+    color:#f3f3f3;
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+  }
+.btn {
+    background-color: whitesmoke;
+    border: 1px solid black;
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cityWeatherData{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }  
+
+  p:nth-child(even){
+    color:#38bdf8;
+  }
+  /* table Component*/
+.table-comp{
+    /* width:800px; */
+    color:black;
+    border-radius:20px;
+    height: 50vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 10px;
+  }
+  table{
+    border-spacing: 20px;
+  }
+  
